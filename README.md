@@ -1,8 +1,12 @@
 ## Getting started
 
-```yarn global add wrangler```
-Make sure you have the most recent version of wrangler
+Install project dependecies
+```yarn install```
 
+Add wrangler
+```yarn global add wrangler```
+
+Make sure you have the most recent version of wrangler
 ```npm update -g wrangler```
 
 ### Create schema

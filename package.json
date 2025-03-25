@@ -7,7 +7,9 @@
 		"dev": "wrangler dev",
 		"start": "wrangler dev",
 		"test": "vitest",
-		"cf-typegen": "wrangler types"
+		"cf-typegen": "wrangler types",
+		"sql": "wrangler d1 execute db --local --command",
+		"sql-file": "wrangler d1 execute db --local --file"
 	},
 	"devDependencies": {
 		"@cloudflare/vitest-pool-workers": "^0.7.5",
@@ -15,5 +17,9 @@
 		"typescript": "^5.5.2",
 		"vitest": "~3.0.7",
 		"wrangler": "^4.4.0"
+	},
+	"dependencies": {
+		"hono": "^4.7.4"
 	}
 }
+

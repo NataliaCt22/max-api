@@ -1,0 +1,81 @@
+{
+    "info": {
+      "name": "Music API",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Create Artist",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "url": {
+            "raw": "http://localhost:8787/artists",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8787",
+            "path": ["artists"]
+          },
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"name\": \"Jane Doe\",\n  \"bio\": \"Indie pop sensation\",\n  \"genre\": \"Indie Pop\"\n}"
+          }
+        }
+      },
+      {
+        "name": "Create Release",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "url": {
+            "raw": "http://localhost:8787/releases",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8787",
+            "path": ["releases"]
+          },
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"title\": \"Breaking Free\",\n  \"release_date\": \"2025-04-01\",\n  \"status\": \"unreleased\",\n  \"genre\": \"Indie Pop\",\n  \"artist_id\": \"1\"\n}"
+          }
+        }
+      },
+      {
+        "name": "Get All Artists",
+        "request": {
+          "method": "GET",
+          "url": {
+            "raw": "http://localhost:8787/artists",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8787",
+            "path": ["artists"]
+          }
+        }
+      },
+      {
+        "name": "Get All Releases",
+        "request": {
+          "method": "GET",
+          "url": {
+            "raw": "http://localhost:8787/releases",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8787",
+            "path": ["releases"]
+          }
+        }
+      }
+    ]
+  }
+  
